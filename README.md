@@ -4,15 +4,13 @@
 
 ## 项目结构
 
-
 ## 环境要求
 
-- Node.js：建议 `18+`（推荐 20 LTS）
-- npm：建议 `9+`
+- Node.js：`>=16.20.0`（你本地 `16.20.2` 可直接使用）
+- npm：建议 `8+`
 - Java：`17`
 
-> 若启动前端出现 `crypto.getRandomValues is not a function`，通常是 Node 版本过低。请先升级 Node 到 18+ 后重试。
-
+> 已将前端工具链降级为 **Vite 4 + @vitejs/plugin-vue 4**，兼容 Node 16，避免 `crypto.getRandomValues is not a function` 启动报错。
 
 ```text
 RZ-DataAcquisition/
