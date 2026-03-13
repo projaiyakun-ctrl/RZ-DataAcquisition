@@ -17,12 +17,13 @@ RZ-DataAcquisition/
 - CORS 配置（允许前端本地开发端口）
 - 基础系统信息接口：`GET /api/system/info`
 - SSE 实时流示例接口：`GET /api/system/stream`
+- 项目内 Maven 镜像配置：`backend/.mvn/settings.xml`
 
-启动：
+启动（使用项目内镜像配置）：
 
 ```bash
 cd backend
-mvn spring-boot:run
+mvn -s .mvn/settings.xml spring-boot:run
 ```
 
 ## 前端（Vue3）
@@ -32,6 +33,7 @@ mvn spring-boot:run
 - Vue Router / Pinia 初始化
 - 仪表盘首页（展示后端信息）
 - 对接 SSE 心跳流并实时展示
+- 项目内 npm 镜像配置：`frontend/.npmrc`
 
 启动：
 
